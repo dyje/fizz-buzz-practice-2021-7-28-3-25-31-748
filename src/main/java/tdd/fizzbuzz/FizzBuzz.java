@@ -8,8 +8,9 @@ public class FizzBuzz {
             return "Fizz";
         }else if(givenNumber%5 == 0){
             return "Buzz";
-        }
-        else {
+        }else if(givenNumber%7 == 0) {
+            return "Whizz";
+        }else {
             return String.valueOf(givenNumber);
         }
     }
