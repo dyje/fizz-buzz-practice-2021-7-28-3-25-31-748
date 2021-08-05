@@ -31,4 +31,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result).isEqualTo("Fizz");
     }
+
+    @Test
+    void should_return_buzz_when_count_of_multiple_of_five() {
+        //given
+        int givenNumber = 10;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.countOf(givenNumber);
+
+        //then
+        assertThat(result).isEqualTo("Buzz");
+    }
 }
